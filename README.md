@@ -14,7 +14,3 @@ This project implements a pairs trading strategy between Coca-Cola (KO) and Peps
 ```bash
 pip install -r requirements.txt
 ```
-
-## Status
-
-🚧 Project in development

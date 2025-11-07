@@ -173,7 +173,8 @@ class PairSelector:
 
         ax.set_xlabel('Date')
         ax.set_ylabel('Price ($)')
-        ax.set_title('Price Series: KO vs PEP')
+        tickers_str = ' vs '.join(self.tickers)
+        ax.set_title(f'Price Series: {tickers_str}')
         ax.legend()
         ax.grid(True, alpha=0.3)
 
@@ -200,7 +201,8 @@ class PairSelector:
         ax1.axhline(y=np.mean(residuals) - 2 * np.std(residuals), color='green',
                     linestyle='--', linewidth=1, label='-2σ')
         ax1.set_ylabel('Spread')
-        ax1.set_title('Spread Evolution (Engle-Granger)')
+        tickers_str = f"{self.tickers[0]}-{self.tickers[1]}"
+        ax1.set_title(f'Spread Evolution: {tickers_str} (Engle-Granger)')
         ax1.legend()
         ax1.grid(True, alpha=0.3)
 

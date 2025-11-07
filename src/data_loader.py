@@ -20,7 +20,7 @@ class DataLoader:
         Parameters:
         -----------
         tickers : list
-            List of ticker symbols (e.g., ['KO', 'PEP'])
+            List of ticker symbols (e.g., ['HD', 'LOW'])
         start_date : str
             Start date in 'YYYY-MM-DD' format
         end_date : str
